@@ -11,7 +11,15 @@ function App() {
       </head>
       <body>
         <header>
-          <h1></h1>
+          <h1>My Reads</h1>
+          <nav>
+            <li>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+            </li>
+          </nav>
         </header>
       </body>
     </div>
