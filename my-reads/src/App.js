@@ -1,27 +1,48 @@
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+
+// Placeholder components for other pages
+function Home() {
+  return <h2>Home Page</h2>;
+}
+
+function FindSomethingNew() {
+  return <h2>Find Something New</h2>;
+}
+
+function ReviewBooks() {
+  return <h2>Review Books</h2>;
+}
+
+function ToBeRead() {
+  return <h2>To Be Read</h2>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <head>
-        <meta charSet='UTF-8'></meta>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
-        <title>MyReads</title>
-      </head>
-      <body>
+    <Router>
+      <div className="App">
         <header>
-          <h1>My Reads</h1>
+          <h1>MyReads</h1>
           <nav>
-            <li>
-              <ul><a href='index.js'>Home</a></ul>
-              <ul><a href='findSomethingNew,js'>Finding Someting New</a></ul>
-              <ul><a href='review.js'>Review Books</a></ul>
-              <ul><a href='tBR.js'>To Be Read</a></ul>
-            </li>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/find-something-new">Find Something New</Link></li>
+              <li><Link to="/review">Review Books</Link></li>
+              <li><Link to="/tbr">To Be Read</Link></li>
+            </ul>
           </nav>
         </header>
-      </body>
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/find-something-new" element={<FindSomethingNew />} />
+            <Route path="/review" element={<ReviewBooks />} />
+            <Route path="/tbr" element={<ToBeRead />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
