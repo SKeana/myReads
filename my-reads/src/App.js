@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import FindSomethingNew from './components/FindSomethingNew';
 import './App.css';
 
 // Placeholder components for other pages
