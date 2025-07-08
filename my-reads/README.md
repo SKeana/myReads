@@ -1,2 +1,0 @@
-The idea for this proejct is to make a place that I can have all of my books and some of the stat that I will put in for it. 
-This will have both my physical books and then my audiobooks that I've read over the years and it going to have the notes that I've made on these books
